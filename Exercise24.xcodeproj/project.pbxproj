@@ -56,6 +56,7 @@
 		DAA8594929AA8CB200E9B29F /* Exercise24 */ = {
 			isa = PBXGroup;
 			children = (
+				DAA8596029AA90AA00E9B29F /* test123 */,
 				DAA8595E29AA8E6100E9B29F /* Application */,
 				DAA8594E29AA8CB200E9B29F /* ViewController.swift */,
 				DAA8595029AA8CB200E9B29F /* Main.storyboard */,
@@ -73,6 +74,13 @@
 				DAA8594C29AA8CB200E9B29F /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		DAA8596029AA90AA00E9B29F /* test123 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = test123;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
