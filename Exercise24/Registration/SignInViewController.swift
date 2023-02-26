@@ -26,7 +26,11 @@ class SignInViewController: UIViewController {
         guard let storedPassword = UserDefaults.standard.string(forKey: "password") else {return}
         
         if userName == storedUserName && password == storedPassword {
-            //log In
+            let storyboard = UIStoryboard(name: "MoviesListController", bundle: nil)
+            let vC = storyboard.instantiateViewController(withIdentifier: "MoviesListController") as! MoviesListController
+            
+            self.navigationController?.pushViewController(vC, animated: true)
+
         } else {
             showAlert(title: "Error", message: "Username or password is incorrect")
         }
