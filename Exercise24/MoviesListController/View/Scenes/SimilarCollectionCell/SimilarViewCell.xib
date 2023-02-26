@@ -10,16 +10,47 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimilarViewCell" id="gTV-IL-0wX" customClass="SimilarViewCell" customModule="Exercise24" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimilarMovieCell" id="FE4-Cy-W66" customClass="SimilarMovieCell" customModule="Exercise24" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="256"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+                <rect key="frame" x="0.0" y="0.0" width="478" height="256"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="671-P4-0eQ">
+                        <rect key="frame" x="10" y="0.0" width="458" height="256"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkA-XP-7te">
+                        <rect key="frame" x="422.33333333333331" y="5" width="50.666666666666686" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Vbp-ag-k7C"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                        <connections>
+                            <action selector="favouriteButtonTapped:" destination="FE4-Cy-W66" eventType="touchUpInside" id="uUA-hi-300"/>
+                        </connections>
+                    </button>
+                </subviews>
             </view>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="320" height="111"/>
-            <point key="canvasLocation" x="233.58778625954199" y="-1.7605633802816902"/>
+            <viewLayoutGuide key="safeArea" id="Qc0-AN-diV"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="671-P4-0eQ" secondAttribute="trailing" constant="10" id="V6H-7Z-4vz"/>
+                <constraint firstItem="HkA-XP-7te" firstAttribute="top" secondItem="FE4-Cy-W66" secondAttribute="top" constant="5" id="dFy-aC-hfm"/>
+                <constraint firstAttribute="bottom" secondItem="671-P4-0eQ" secondAttribute="bottom" id="maS-8W-6oL"/>
+                <constraint firstItem="671-P4-0eQ" firstAttribute="top" secondItem="FE4-Cy-W66" secondAttribute="top" id="rF4-c8-LWg"/>
+                <constraint firstAttribute="trailing" secondItem="HkA-XP-7te" secondAttribute="trailing" constant="5" id="tkt-VL-Ktg"/>
+                <constraint firstItem="671-P4-0eQ" firstAttribute="leading" secondItem="FE4-Cy-W66" secondAttribute="leading" constant="10" id="yKo-sI-h8o"/>
+            </constraints>
+            <size key="customSize" width="478" height="256"/>
+            <connections>
+                <outlet property="cellImageView" destination="671-P4-0eQ" id="gDD-cH-EJa"/>
+                <outlet property="favouriteButton" destination="HkA-XP-7te" id="YJ6-id-zOE"/>
+            </connections>
+            <point key="canvasLocation" x="116.03053435114504" y="-15.492957746478874"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+    </resources>
 </document>

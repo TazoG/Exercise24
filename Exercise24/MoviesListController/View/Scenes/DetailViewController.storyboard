@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--DetailVC-->
+        <!--Detail View Controller-->
         <scene sceneID="cfG-LV-u65">
             <objects>
-                <viewController storyboardIdentifier="DetailVC" id="XXH-a1-iCl" customClass="DetailVC" customModule="Exercise24" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="XXH-a1-iCl" customClass="DetailViewController" customModule="Exercise24" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xCA-X6-5p8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="6BW-GZ-9sw" id="sAp-NR-B9Z"/>
-                        <outlet property="imageView" destination="5co-TB-dqM" id="SIt-a2-dru"/>
+                        <outlet property="detailImageView" destination="5co-TB-dqM" id="L5u-fa-RZj"/>
                         <outlet property="titleLabel" destination="LdE-tU-yhq" id="7mZ-YK-rQi"/>
                     </connections>
                 </viewController>

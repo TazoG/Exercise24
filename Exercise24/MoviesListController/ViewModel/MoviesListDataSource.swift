@@ -51,7 +51,10 @@ class MoviesListDataSource: NSObject,UITableViewDataSource, UITableViewDelegate 
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //details page
+       let storyboard = UIStoryboard(name: "DetailViewController", bundle: nil)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        let movie = movies[indexPath.row]
+        detailVC.movie = movie
         
     }
     

@@ -26,15 +26,15 @@ class MoviesListCell: UITableViewCell {
         moviesLbl.text = item.title
         
         URLSession.shared.dataTask(with: URLRequest(url: URL(string: "https://image.tmdb.org/t/p/w342/\(item.image)")!)) {
-            (data, response,error) in
+            (data, response, error) in
             
             do{
-                var datas = try data
+                var datas = data
                 DispatchQueue.main.async {
                     self.moviesImg.image = UIImage (data: datas!)
                 }
-            }catch{
-                
+            } catch {
+                print(error.localizedDescription)
             }
         }
         .resume ()

@@ -198,10 +198,10 @@
 		DAA8594929AA8CB200E9B29F /* Exercise24 */ = {
 			isa = PBXGroup;
 			children = (
+				DAA8595E29AA8E6100E9B29F /* Application */,
 				3982A1D829AB7A2500DB370E /* Infrastructure */,
 				3982A1D029AB742000DB370E /* Domain */,
 				3982A1C429AB713500DB370E /* MoviesListController */,
-				DAA8595E29AA8E6100E9B29F /* Application */,
 				DA9B37C429AB589900407A6C /* Registration */,
 				DAA8595329AA8CB400E9B29F /* Assets.xcassets */,
 				DAA8595529AA8CB400E9B29F /* LaunchScreen.storyboard */,

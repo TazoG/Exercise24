@@ -7,15 +7,33 @@
 
 import UIKit
 
-class DetailVC: UIViewController {
+class DetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var movie: Movie! = Movie(id: 50, image: "", title: "title")
-    var similarMovies = [Movie]()
+    private let moviesService: MoviesService
+    var movie: MovieViewModel!
+    var similarMovies = [MovieViewModel]()
     let webServiceManager: WebServiceManagerProtocol = WebServiceManager()
+    private var url: String {
+        get {
+            return "https://api.themoviedb.org/3/movie/\(movie.id)/similar?api_key=44eb1481b98d9c5e2d312757977b5c5a"
+        }
+    }
+    
+    
+    init (moviesService: MoviesService) {
+        self.moviesService = moviesService
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,30 +41,20 @@ class DetailVC: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "SimilarMovieCell", bundle: nil), forCellWithReuseIdentifier: "SimilarMovieCell")
-
+        
         
         titleLabel.text = movie.title
         configure(with: movie)
-        fetchSimilarMovies()
-          
+            
     }
     
-    func fetchSimilarMovies() {
-        webServiceManager.get(url: movie.similarMoviesURL) { [weak self] (result: Result<Response, WebServiceManager.WebServiceError>) in
-                switch result {
-                case let .success(response):
-                    self?.similarMovies = response.results
-                    DispatchQueue.main.async {
-                        self?.collectionView.reloadData()
-                    }
-                case let .failure(error):
-                    print("Failed to fetch similar movies: \(error.localizedDescription)")
-                }
-            }
+    func fetchMovies() {
+        moviesService.fetchMovies(url: url) { result in
+            self.similarMovies = result.results.map([MovieViewModel.init])
         }
+    }
     
-    func configure(with movie: Movie) {
-        
+    func configure(with movie: MovieViewModel) {
         if let imageUrl = URL(string: "https://image.tmdb.org/t/p/w500\(movie.image)") {
             let task = URLSession.shared.dataTask(with: imageUrl) { data, response, error in
                 if let error = error {
@@ -56,16 +64,23 @@ class DetailVC: UIViewController {
                 
                 if let data = data, let image = UIImage(data: data) {
                     DispatchQueue.main.async {
-                        self.imageView.image = image
+                        self.detailImageView.image = image
                     }
                 }
             }
             task.resume()
+            
         }
+        
+        
     }
+    
 }
 
-extension DetailVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
+
+
+
+extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         similarMovies.count
     }
@@ -80,9 +95,4 @@ extension DetailVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: 100, height: 180)
     }
-    
-    
-    
-    
-    
 }

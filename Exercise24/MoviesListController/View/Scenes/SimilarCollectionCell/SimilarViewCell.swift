@@ -18,7 +18,7 @@ class SimilarMovieCell: UICollectionViewCell {
         cellImageView.layer.cornerRadius = 20
     }
     
-    func configure(with movie: Movie) {
+    func configure(with movie: MovieViewModel) {
         if let imageUrl = URL(string: "https://image.tmdb.org/t/p/w500\(movie.image)") {
             let task = URLSession.shared.dataTask(with: imageUrl) { data, response, error in
                 if let error = error {
