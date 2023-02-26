@@ -26,7 +26,7 @@ class MoviesListController: UIViewController {
     private func configureViewModel() {
         moviesService = MoviesService(webServiceManager: WebServiceManager())
         viewModel = MoviesListViewModel(moviesService: moviesService)
-        dataSource = MoviesListDataSource(tableView: tableView, viewModel: viewModel)
+        dataSource = MoviesListDataSource(tableView: tableView, viewModel: viewModel, navigation: navigationController!)
         
     }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SimilarMovieCell: UICollectionViewCell {
+class SimilarViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var favouriteButton: UIButton!

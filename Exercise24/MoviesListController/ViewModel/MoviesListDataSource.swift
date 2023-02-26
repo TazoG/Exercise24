@@ -7,20 +7,22 @@
 
 import UIKit
 
-class MoviesListDataSource: NSObject,UITableViewDataSource, UITableViewDelegate {
+class MoviesListDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
         
     private let tableView: UITableView
     private let viewModel: MoviesListViewModel
     private var movies = [MovieViewModel]()
+    private let navigation: UINavigationController
 
     
     init(
         tableView: UITableView,
-        viewModel: MoviesListViewModel
-        
+        viewModel: MoviesListViewModel,
+        navigation: UINavigationController
     ){
         self.tableView = tableView
         self.viewModel = viewModel
+        self.navigation = navigation
         super.init()
         
         self.tableView.dataSource = self
@@ -55,7 +57,7 @@ class MoviesListDataSource: NSObject,UITableViewDataSource, UITableViewDelegate 
         let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         let movie = movies[indexPath.row]
         detailVC.movie = movie
-        
+        navigation.pushViewController(detailVC, animated: true)
     }
     
 }
