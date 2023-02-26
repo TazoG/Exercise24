@@ -48,11 +48,11 @@ class DetailViewController: UIViewController {
             
     }
     
-    func fetchMovies() {
-        moviesService.fetchMovies(url: url) { result in
-            self.similarMovies = result.results.map([MovieViewModel.init])
-        }
-    }
+//    func fetchMovies() {
+//        moviesService.fetchMovies(url: url) { result in
+//            self.similarMovies = result.results.map([MovieViewModel.init])
+//        }
+//    }
     
     func configure(with movie: MovieViewModel) {
         if let imageUrl = URL(string: "https://image.tmdb.org/t/p/w500\(movie.image)") {
