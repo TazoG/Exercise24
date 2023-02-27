@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4B0D606F-F473-45FF-A197-77FE439B3FC9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59CFA16A-0E60-4CAA-A68B-BF3B7969E3B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "fetchSimilarMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "59CFA16A-0E60-4CAA-A68B-BF3B7969E3B6 - ba1c51f2eb2af053"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Exercise24.DetailViewController.fetchSimilarMovies() -&gt; ()"
+                  moduleName = "Exercise24"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tazogigitashvili/Desktop/EduTech/Lec28%20-%20Version%20Controll,%20github/Exercise24/Exercise24/MoviesListController/View/Scenes/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "59CFA16A-0E60-4CAA-A68B-BF3B7969E3B6 - ab11a1a20248d0da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Exercise24.Response) -&gt; () in Exercise24.DetailViewController.fetchSimilarMovies() -&gt; ()"
+                  moduleName = "Exercise24"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tazogigitashvili/Desktop/EduTech/Lec28%20-%20Version%20Controll,%20github/Exercise24/Exercise24/MoviesListController/View/Scenes/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "59CFA16A-0E60-4CAA-A68B-BF3B7969E3B6 - fce330c0a6884158"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in closure #1 (Exercise24.Response) -&gt; () in Exercise24.DetailViewController.fetchSimilarMovies() -&gt; ()"
+                  moduleName = "Exercise24"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tazogigitashvili/Desktop/EduTech/Lec28%20-%20Version%20Controll,%20github/Exercise24/Exercise24/MoviesListController/View/Scenes/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F79A7847-462E-4405-AAD6-6D9C3C21B8B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "fetchSimilarMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F79A7847-462E-4405-AAD6-6D9C3C21B8B9 - ab11a1a20248d09c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Exercise24.Response) -&gt; () in Exercise24.DetailViewController.fetchSimilarMovies() -&gt; ()"
+                  moduleName = "Exercise24"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tazogigitashvili/Desktop/EduTech/Lec28%20-%20Version%20Controll,%20github/Exercise24/Exercise24/MoviesListController/View/Scenes/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "207">
+               </Location>
+               <Location
+                  uuid = "F79A7847-462E-4405-AAD6-6D9C3C21B8B9 - cb0d018b32039c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Exercise24.Movie) -&gt; Exercise24.MovieViewModel in closure #1 (Exercise24.Response) -&gt; () in Exercise24.DetailViewController.fetchSimilarMovies() -&gt; ()"
+                  moduleName = "Exercise24"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tazogigitashvili/Desktop/EduTech/Lec28%20-%20Version%20Controll,%20github/Exercise24/Exercise24/MoviesListController/View/Scenes/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D831787-DC8B-4AC5-8BCF-BEEEAF70438A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/SimilarCollectionCell/SimilarViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "favouriteButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F10AEE80-B651-4AB3-92E7-9BB1EEB4F2A9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/SimilarCollectionCell/SimilarViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "favouriteButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE5291F3-B96B-44F9-B171-EC3577FB7D64"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE4140E7-BC85-4FBB-B32D-79322202418C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/DetailVC/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "DetailViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD5533AC-1B56-4BA6-A415-9B6D67AD0166"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/DetailVC/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "favoritesTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15525D92-3129-40C5-965A-A4E6A86D1328"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/DetailVC/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "favoritesTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F7A34D1-4F1C-4D04-8888-ED7524FAECF0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/DetailVC/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "favoritesTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B43F2D33-C081-409F-A615-E20FEB3F7B9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercise24/MoviesListController/View/Scenes/DetailVC/SimilarCollectionCell/SimilarViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "favouriteButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
